@@ -1,0 +1,74 @@
+/* font-family: 'Lato', sans-serif; */
+
+html {
+  font-size: 10px;
+  font-family: "Lato", sans-serif;
+  color: #fff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 1.6rem;
+}
+h1 {
+  font-size: 3.6rem;
+}
+
+h2 {
+  font-size: 2.4rem;
+}
+
+.headerWrapper,
+.footerWrapper,
+.mainWrapper {
+  padding: 1rem;
+}
+.headerWrapper,
+.footerWrapper {
+  background: rgb(29, 29, 29);
+}
+
+.mainWrapper {
+  background: rgba(25, 0, 255, 0.7);
+}
+
+/* Styling The Navigation Menus */
+
+.navWrapper {
+  background: rgb(214, 36, 36);
+}
+
+nav ul {
+  display: block;
+  border-left: solid 1px rgba(255, 255, 255, 0.3);
+}
+
+/* main menu items float side by side */
+nav ul li {
+  float: left;
+}
+
+nav ul li a {
+  display: block; /* which makes our links clickable and takes all height and width*/
+  color: #fff;
+  padding: 0.7rem 0.9rem;
+  text-decoration: none;
+  border-right: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* for active a */
+
+nav ul li.active > a {
+  background: #ff7200;
+}
+
+/* clearfix hack */
+.clearfix::before,
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
