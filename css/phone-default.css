@@ -65,6 +65,26 @@ nav ul li.active > a {
   background: #ff7200;
 }
 
+/* rules for the sub menus items */
+
+nav ul li ul {
+  position: absolute;
+  width: 15rem;
+  background: #b00;
+  margin: 0;
+  z-index: 99;
+  left: -999rem;
+}
+
+nav ul li ul li {
+  float: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  border-right: none;
+}
+nav li:hover ul {
+  left: auto;
+}
+
 /* clearfix hack */
 .clearfix::before,
 .clearfix::after {
